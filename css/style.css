@@ -1,1 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fffaf0;
+    color: #554d45;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    background-color: #f5ddb5;
+    color: #5d4b37;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
+}
+
+.nav-links a{
+    color:#efc4b5
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bio-hero{
+    flex-basis: 100%;
+    width: 100%;
+    margin: 24px 0;
+    padding: 20px;
+    background-color: #d8cdb7;
+    border: 2px solid #edd08c;
+}
+
+.bio-hero h2{
+    margin-bottom: 8px;
+    color: #5d4b37;
+}
+
+.card-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    flex-basis: 100%;
+    min-width: 0;
+    padding: 20px;
+}
+
+.card-one{
+    background-color: #b58ce7;
+    border: 2px solid #bfa8da;
+}
+
+.card-two{
+    background-color: #e8ab95;
+    border: 2px solid #e5ae9b
+}
+
+.card-three{
+    background-color: #84ecb1;
+    border: 2px solid #acd3bd
+}
+
+.card img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.card h2{
+    margin-bottom: 8px;
+    color:#f3c4db
+}
+
+.card p{
+    margin-bottom: 12px;
+}
+
+.card:hover{
+    box-shadow: 4px 4px 10px #d7c8b8;
+}
+
+footer{
+    background-color: #f6dfb8;
+    margin-top: 24px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links{
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .card-grid{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .card{
+        flex-basis: 30%
+    }
+}
+
 
